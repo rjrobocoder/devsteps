@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Development Roadmap</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .phase {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .phase-title {
+            font-size: 1.8rem;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .dates {
+            font-weight: bold;
+            color: #666;
+        }
+        .tasks {
+            margin-top: 15px;
+            list-style: none;
+            padding-left: 0;
+        }
+        .tasks li {
+            background-color: #eaf5ff;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .tasks li.completed {
+            background-color: #d4edda;
+            text-decoration: line-through;
+        }
+        .subtopics {
+            margin-top: 5px;
+            font-size: 0.9rem;
+            color: #444;
+        }
+        .progress-container {
+            margin: 20px 0;
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 20px;
+        }
+        .progress-bar-inner {
+            height: 100%;
+            background-color: #007bff;
+            width: 0%;
+            transition: width 0.4s;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Full Stack Development Roadmap</h1>
+
+    <!-- Phase 1: Frontend Development -->
+    <div class="phase" data-phase="1">
+        <div class="phase-title">Phase 1: Core Frontend Development (React.js, Next.js, TypeScript)</div>
+        <div class="dates">Oct 7, 2024 - Dec 7, 2024</div>
+        
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-bar-inner" id="progress-phase-1"></div>
+            </div>
+        </div>
+        
+        <ul class="tasks" id="tasks-phase-1">
+            <li data-task="1">
+                <span>Advanced React hooks (2 weeks: Oct 7 - Oct 21)</span>
+                <div class="subtopics">
+                    Subtopics:
+                    <ul>
+                        <li>useContext, useReducer</li>
+                        <li>useMemo, useCallback</li>
+                        <li>Custom Hooks</li>
+                        <li>React's Concurrent Mode</li>
+                    </ul>
+                </div>
+                <input type="checkbox" class="task-checkbox">
+            </li>
+            <li data-task="2">
+                <span>Next.js: SSR, static generation (2 weeks: Oct 22 - Nov 5)</span>
+                <div class="subtopics">
+                    Subtopics:
+                    <ul>
+                        <li>Server-side Rendering (SSR)</li>
+                        <li>Static Site Generation (SSG)</li>
+                        <li>Dynamic Routing in Next.js</li>
+                        <li>API routes in Next.js</li>
+                    </ul>
+                </div>
+                <input type="checkbox" class="task-checkbox">
+            </li>
+            <li data-task="3">
+                <span>TypeScript: Typing, interfaces (2 weeks: Nov 6 - Nov 20)</span>
+                <div class="subtopics">
+                    Subtopics:
+                    <ul>
+                        <li>Basic Types</li>
+                        <li>Interfaces vs. Types</li>
+                        <li>Generics in TypeScript</li>
+                        <li>Type Assertions &amp; Guards</li>
+                    </ul>
+                </div>
+                <input type="checkbox" class="task-checkbox">
+            </li>
+            <li data-task="4">
+                <span>Build full-stack app using Next.js (4 weeks: Nov 21 - Dec 7)</span>
+                <div class="subtopics">
+                    Subtopics:
+                    <ul>
+                        <li>Integrating REST APIs</li>
+                        <li>State Management with Redux/Context API</li>
+                        <li>Authentication with JWT or NextAuth</li>
+                        <li>Deployment to Vercel</li>
+                    </ul>
+                </div>
+                <input type="checkbox" class="task-checkbox">
+            </li>
+        </ul>
+    </div>
+
+    <!-- Phase 2: Backend Development -->
+    <div class="phase" data-phase="2">
+        <div class="phase-title">Phase 2: Backend Development (Node.js, Express, Golang, Databases)</div>
+        <div class="dates">Dec 8, 2024 - Feb 23, 2025</div>
+        
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-bar-inner" id="progress-phase-2"></div>
+            </div>
+        </div>
+        
+        <ul class="tasks" id="tasks-phase-2">
+            <li data-task="1">
+                <span>Node.js + RESTful APIs (3 weeks: Dec 8 - Dec 28)</span>
+                <div class="subtopics">
+                    Subtopics:
+                    <ul>
+                        <li>Express.js framework</li>
+                        <li>Creating RESTful APIs</li>
+                        <li>Middlewares and Routing</li>
+                        <li>Error Handling in APIs</li>
+                    </ul>
+                </div>
+                <input type="checkbox" class="task-checkbox">
+            </li>
+            <li data-task="2">
+                <span>MongoDB + schema design (2 weeks: Dec 29 - Jan 12)</span>
+                <div class="subtopics">
+                    Subtopics:
+                    <ul>
+                        <li>MongoDB Basics</li>
+                        <li>Mongoose for schema design</li>
+                        <li>CRUD operations</li>
+                        <li>Indexes and Aggregations</li>
+                    </ul>
+                </div>
+                <input type="checkbox" class="task-checkbox">
+            </li>
+            <li data-task="3">
+                <span>PostgreSQL + relational modeling (2 weeks: Jan 13 - Jan 27)</span>
+                <div class="subtopics">
+                    Subtopics:
+                    <ul>
+                        <li>Relational Database Basics</li>
+                        <li>SQL Queries (CRUD)</li>
+                        <li>Joins, Constraints, and Relationships</li>
+                        <li>Normalization and Optimization</li>
+                    </ul>
+                </div>
+                <input type="checkbox" class="task-checkbox">
+            </li>
+            <li data-task="4">
+                <span>Golang for microservices (3 weeks: Jan 28 - Feb 18)</span>
+                <div class="subtopics">
+                    Subtopics:
+                    <ul>
+                        <li>Intro to Go programming</li>
+                        <li>Building a microservice in Go</li>
+                        <li>gRPC vs. REST in Go</li>
+                        <li>Concurrency in Go (goroutines, channels)</li>
+                    </ul>
+                </div>
+                <input type="checkbox" class="task-checkbox">
+            </li>
+        </ul>
+    </div>
+
+    <!-- Phase 3: DevOps Tools -->
+    <div class="phase" data-phase="3">
+        <div class="phase-title">Phase 3: DevOps (Docker, Kubernetes, Cloud)</div>
+        <div class="dates">Feb 24, 2025 - Mar 31, 2025</div>
+        
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-bar-inner" id="progress-phase-3"></div>
+            </div>
+        </div>
+        
+        <ul class="tasks" id="tasks-phase-3">
+            <li data-task="1">
+                <span>Docker basics (1 week: Feb 24 - Mar 2)</span>
+                <div class="subtopics">
+                    Subtopics:
+                    <ul>
+                        <li>Containers vs Virtual Machines</li>
+                        <li>Creating and Running Containers</li>
+                        <li>Dockerfile &amp; Docker Compose</li>
+                        <li>Managing Volumes and Networks</li>
+                    </ul>
+                </div>
+                <input type="checkbox" class="task-checkbox">
+            </li>
+            <li data-task="2">
+                <span>Kubernetes for container orchestration (2 weeks: Mar 3 - Mar 16)</span>
+                <div class="subtopics">
+                    Subtopics:
+                    <ul>
+                        <li>K8s Architecture</li>
+                        <li>Deployments, Pods, Services</li>
+                        <li>Scaling &amp; Load Balancing</li>
+                        <li>Helm Charts and CI/CD pipelines</li>
+                    </ul>
+                </div>
+                <input type="checkbox" class="task-checkbox">
+            </li>
+            <li data-task="3">
+                <span>AWS/Azure cloud deployment (2 weeks: Mar 17 - Mar 31)</span>
+                <div class="subtopics">
+                    Subtopics:
+                    <ul>
+                        <li>AWS EC2, Lambda Functions</li>
+                        <li>Azure VMs and App Services</li>
+                        <li>Cloud Storage Solutions</li>
+                        <li>Scaling Cloud Applications</li>
+                    </ul>
+                </div>
+                <input type="checkbox" class="task-checkbox">
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    // Save and load tasks from local storage
+    document.addEventListener('DOMContentLoaded', function () {
+        const phases = document.querySelectorAll('.phase');
+
+        phases.forEach(phase => {
+            const phaseId = phase.getAttribute('data-phase');
+            const taskCheckboxes = phase.querySelectorAll('.task-checkbox');
+
+            let completedTasks = 0;
+
+            // Load saved task state from localStorage
+            taskCheckboxes.forEach((checkbox, index) => {
+                const savedState = localStorage.getItem(`phase-${phaseId}-task-${index}`);
+                if (savedState === 'completed') {
+                    checkbox.checked = true;
+                    checkbox.closest('li').classList.add('completed');
+                    completedTasks++;
+                }
+
+                // Save task state on checkbox change
+                checkbox.addEventListener('change', function () {
+                    const taskItem = checkbox.closest('li');
+                    if (checkbox.checked) {
+                        taskItem.classList.add('completed');
+                        completedTasks++;
+                        localStorage.setItem(`phase-${phaseId}-task-${index}`, 'completed');
+                    } else {
+                        taskItem.classList.remove('completed');
+                        completedTasks--;
+                        localStorage.setItem(`phase-${phaseId}-task-${index}`, 'not-completed');
+                    }
+
+                    // Update progress bar
+                    updateProgress(phaseId, completedTasks, taskCheckboxes.length);
+                });
+            });
+
+            // Update progress on page load
+            updateProgress(phaseId, completedTasks, taskCheckboxes.length);
+        });
+    });
+
+    function updateProgress(phaseId, completedTasks, totalTasks) {
+        const progressElement = document.getElementById(`progress-phase-${phaseId}`);
+        const progressPercentage = (completedTasks / totalTasks) * 100;
+        progressElement.style.width = progressPercentage + '%';
+    }
+</script>
+
+</body>
+</html>
